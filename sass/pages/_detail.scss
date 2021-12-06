@@ -1,0 +1,241 @@
+.detail {
+
+    margin: 9rem 0;
+    display: none;    
+
+    &-back {
+        display: block;
+        width: Min(90%, 120rem);
+        margin: 0 auto;
+
+        &--button {
+            padding: .5rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: 1.6rem;
+            background-color: $color-primary;
+            color: $color-white;
+            border: 0;
+            border-radius: .5rem;
+            cursor: pointer;
+            margin-bottom: 4rem;
+        }
+    }
+    
+    &-container {
+        margin: 0 auto;
+        display: flex;
+        gap: 7rem;
+
+        width: Min(90%, 120rem);
+    }
+
+    &-img {
+        background-color: #FAFAFA;
+        border-radius: 1rem;
+
+        & img {
+            width: 50rem;
+            height: 56rem;
+        }
+    }
+
+    &-content {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+
+        &-sizes {
+            display: flex;
+            gap: 1rem;
+        }
+
+        &-size {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            background-color: $color-gray-size;
+            color: $color-black-1;
+            font-size: 3.2rem;
+            border-radius: 1.5rem;
+
+            width: 7rem;
+            height: 7rem;
+
+            &.selected {
+                background-color: $color-gray-size-selected;
+                color: $color-white-2;
+            }
+        }
+
+        &--name {
+            color: $color-black-3;
+            font-size: 4.8rem;
+            font-weight: 600;
+        }
+
+        &--desc {
+            color: $color-gray-3;
+            font-size: 2.4rem;
+        }
+
+        &--price {
+            font-size: 6.4rem;
+            color: $color-black-3;
+            font-weight: 700;
+        }
+
+
+        &--box {
+            display: flex;
+            gap: 1.6rem;
+        }
+
+        &--buy {
+            background-color: $color-primary;
+            color: $color-white;
+            font-size: 3.2rem;
+            border: 0;
+            border-radius: 2rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            cursor: pointer;
+
+            padding: 1.5rem 4rem;
+        }
+
+        &--plusOrMinus {
+            padding: 1rem 2rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+            background-color: $color-gray-plusOrMinus;
+            color: $color-black-3;
+
+            font-size: 4rem;
+
+            border-radius: 2rem;
+
+            & img {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .detail {
+
+        &-content {
+            gap: 2rem;
+
+            &--box {
+                display: flex;
+                flex-direction: column;
+                width: 25rem;
+            }
+
+            &--name {
+                font-size: 4rem;
+            }
+
+            &--desc {
+                font-size: 2rem;
+            }
+
+            &--price {
+                font-size: 5.6rem;
+            }
+
+            &-size {
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+
+        &-container {
+            gap: 2rem;
+        }
+
+        &-img {
+            display: grid;
+            place-items: center;
+
+            & img {
+                width: 40rem;
+                height: 40rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .detail {
+
+        &-content {
+            gap: 3rem;
+
+            &--box {
+                flex-direction: row;
+                width: auto;
+            }
+        }
+
+        &-container {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .detail {
+
+        &-content {
+            &--box {
+                flex-direction: column;
+
+                & div, & button {
+                    width: 25rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .detail {
+
+        &-img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .detail {
+
+        &-content {
+            &--box {
+                flex-direction: column;
+
+                & div, & button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

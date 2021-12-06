@@ -1,0 +1,18 @@
+.header {
+
+    &-logo {
+        font-size: 3.2rem;
+        cursor: pointer;
+    }
+    
+    &-container {
+        width: $width-container;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+
+        padding: 1.5rem 0;
+    }
+}

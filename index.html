@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>EShop</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo">EShop</div>
+
+            <div class="cart">
+                <div class="cart-button">
+                    <img src="./imgs/shopping-cart.svg" alt="Carrinho de compras">
+                    Carrinho
+                </div>
+
+                <div class="cart-container">
+                    <div class="cart-list">
+
+                        <!-- <div class="cart-product">
+                            <div class="cart-product--box">
+                                <img src="${product.img}" alt="" class="cart-product--img">
+                                <div class="cart-product--info">
+                                    <div class="cart-product--info__title">${product.title} (${size})</div>
+                                </div>
+                            </div>
+                            <div class="cart-product--box">
+                                <div class="cart-product--price">${this.formatCurrency(product.price)}</div>
+                                <div class="cart-product--quantity">
+                                    <button class="cart-product--quantity__minus">-</button>
+                                    <div class="cart-product--quantity__text">${quantity}</div>
+                                    <button class="cart-product--quantity__plus">+</button>
+                                </div>
+                            </div>
+                        </div> -->
+
+                    </div>
+                    <div class="cart-money">
+                        <div class="cart-money--total">Total: <span>R$ 0,00</span></div>
+                        <button class="cart-money--buy">Ir pro checkout</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="home">
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="hero-content--new">NOVOS PRODUTOS</p>
+                    <h1 class="hero-content--name">Tênis Adidas Grand Court Base</h1>
+                    <p class="hero-content--desc">Conforto e estilo da melhor forma e no menor preço.</p>
+                </div>
+                <div class="hero-img">
+                    <img src="./imgs/hero-image.png" alt="">
+                </div>
+            </div>
+        </section>
+    
+        <section class="benefits">
+            <div class="benefits-container">
+                <div class="benefits-box">
+                    <img src="./imgs/truck.svg" alt="" class="benefits-box--img">
+                    <p class="benefits-box--desc">Entrega rápida</p>
+                </div>
+                <div class="benefits-box">
+                    <img src="./imgs/truck.svg" alt="" class="benefits-box--img">
+                    <p class="benefits-box--desc">Entrega rápida</p>
+                </div>
+                <div class="benefits-box">
+                    <img src="./imgs/truck.svg" alt="" class="benefits-box--img">
+                    <p class="benefits-box--desc">Entrega rápida</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="bestsellers">
+            <div class="bestsellers-container">
+                <h2 class="section-title">Mais vendidos</h2>
+    
+                <div class="card-container">
+                    <div class="card">
+                        <img class="card-img" src="./imgs/hero-image.png" alt="">
+                        <p class="card-name">Tênis Adidas Grand Court Base</p>
+                        <h3 class="card-price">R$ 30,00</h3>
+                        <button class="card-button">
+                            Comprar
+                        </button>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./imgs/hero-image.png" alt="">
+                        <p class="card-name">Tênis Adidas Grand Court Base</p>
+                        <h3 class="card-price">R$ 30,00</h3>
+                        <button class="card-button">
+                            Comprar
+                        </button>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./imgs/hero-image.png" alt="">
+                        <p class="card-name">Tênis Adidas Grand Court Base</p>
+                        <h3 class="card-price">R$ 30,00</h3>
+                        <button class="card-button">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="products">
+            <div class="products-container">
+                <h2 class="section-title">Produtos</h2>
+    
+                <div class="input-box">
+                    <div class="input-box--name">
+                        <img src="./imgs/search.svg" alt="">
+                        <input class="input-filter--name" type="text" placeholder="Produto">
+                    </div>
+                    <div class="input-box--category">
+                        <select class="input-filter--select" name="" id="">
+                            <option value="Todas">Todas</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="card-container products-list">
+                    <!-- <div class="card outlined">
+                        <img class="card-img" src="./imgs/hero-image.png" alt="">
+                        <p class="card-name">Tênis Adidas Grand Court Base</p>
+                        <h3 class="card-price">R$ 30,00</h3>
+                        <button class="card-button">
+                            Comprar
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+        </section>    
+    </main>
+
+    <main class="detail">
+        <!-- <div class="detail-container">
+            <div class="detail-img">
+                <img src="./imgs/hero-image.png" alt="">
+            </div>
+            <div class="detail-content">
+                <p class="detail-content--name">Tênis Adidas Grand Court Base</p>
+                <p class="detail-content--desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis sollicitudin justo. In a dictum nibh. </p>
+
+                <div class="detail-content-sizes">
+                    <div class="detail-content-size">P</div>
+                    <div class="detail-content-size">M</div>
+                    <div class="detail-content-size selected">G</div>
+                </div>
+
+                <h4 class="detail-content--price">R$ 30,00</h4>
+
+                <div class="detail-content--box">
+
+                    <div class="detail-content--plusOrMinus">
+                        <img class="detail-content--minus" src="./imgs/minus-circle.svg" alt="">
+                        <span>1</span> 
+                        <img id="detail-content--plus" src="./imgs/plus-circle.svg" alt="">
+                    </div>
+
+                    <button class="detail-content--buy">
+                        <img src="./imgs/shopping-cart.svg" alt="">
+                        Comprar
+                    </button>
+
+                </div>
+            </div>
+        </div> -->
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copyright">© 2020 - Edmar Alencar. Todos os direitos reservados</p>
+
+            <div class="footer-social">
+                <div class="footer-social--icon">
+                    <img src="./imgs/github.svg" alt="" class="footer-social--icon__img">
+                    <div class="footer-social--icon__circle"></div>
+                </div>
+                <div class="footer-social--icon">
+                    <img src="./imgs/insta.svg" alt="" class="footer-social--icon__img">
+                    <div class="footer-social--icon__circle"></div>
+                </div>
+                <div class="footer-social--icon">
+                    <img src="./imgs/linkedin.svg" alt="" class="footer-social--icon__img">
+                    <div class="footer-social--icon__circle"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./products.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
